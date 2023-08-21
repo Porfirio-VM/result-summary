@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+ul{
+    list-style: none;
+}
+.red, .yellow , .blue, .green{
+    height: 54px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.red{
+    background-color:  hsl(0, 100%, 67%,0.05);
+    color: hsl(0, 100%, 67%);
+}
+.yellow{
+    background-color: #ffb01f0d;
+    color: #ffb01f;
+}
+.green{
+    background-color: #00bd910d;
+    color: #00bd91;
+}
+.blue{
+    background-color: #1125d40d;
+    color: #1125d4;
+}
+.atr_name, .score{
+    display: flex;
+    margin-inline: 20px;
+}
+.atr_name img{
+   
+}
+.score{
+    font-size: 14px;
+    color: black;
+    font-weight: 800;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    max-width: 740px;
+    box-shadow: 5px 5px 20px 5px rgba(101, 87, 255, 0.15);
+}
+.result, .summ {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    flex: 1 1 50%;
+    padding: 40px;
+    box-sizing: border-box;
+    
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    padding:43px 60px;
+    background-image: linear-gradient(to bottom, hsl(251, 100%, 64%), hsl(245, 81%, 54%));
+    color: azure;
+    align-items: center;
+    text-align: center;
+}
+.result h2{
+    opacity: 0.6;
+    margin-bottom: 40px;
+    
+}
+.result h1{
+    margin-bottom: 20px;
+}
+.result p{
+    text-align: center;
+    opacity: .5;
+    font-size: 17px;
+    
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.circle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(246, 72%, 46%, 0));
+    margin-bottom: 30px;
+}
+.circle h1{
+    font-size: 70px;
+    
+}
+.circle h3{
+    opacity: 0.6;
+}
+.summ h2{
+    margin-bottom: 18px;
+}
+.continue{
+    color: azure;
+    background-image: linear-gradient(to bottom, hsl(251, 100%, 64%), hsl(245, 81%, 54%));
+    align-self: center;
+    width: 100%;
+    border: none;
+    height: 54px;
+    border-radius: 25px;
+    font-size: 16px;
+
+}
+.continue:hover{
+    cursor: pointer;
+}
+

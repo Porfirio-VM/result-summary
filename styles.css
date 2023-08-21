@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root{
+--light-red: hsl(0, 100%, 67%);
+--orange-yellow: hsl(39, 100%, 56%);
+--green-teal: hsl(166, 100%, 37%);
+--cobalt-blue: hsl(234, 85%, 45%);
+
+--light-slate-blue: hsl(252, 100%, 67%);
+--light-royal-blue: hsl(241, 81%, 54%);
+
+--violet-blue: hsla(256, 72%, 46%, 1);
+--persian-blue: hsla(241, 72%, 46%, 0);
+
+--white: hsl(0, 0%, 100%);
+--pale-blue: hsl(221, 100%, 96%);
+--light-lavender: hsl(241, 100%, 89%);
+--sark-gray-blue: hsl(224, 30%, 27%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: var(--white);
+}
+.grid{
+    border-radius: 1.3rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    grid-template-rows: auto;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.result,
+.summary{
+    padding: 1.5rem;
+}
+.result{
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: inherit;
+    color: var(--white);
+    background: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue));
+    text-align: center;
+}
+.result h3{
+    color: var(--light-lavender);
+}
+.result h1{
+    font-size: 40px;
+}
+.result h4{
+    font-weight: 700;
+    color: var(--light-lavender);
+}
+.circle{
+    background: linear-gradient(to bottom, var(--violet-blue), var(--persian-blue));
+    flex-direction: column;
+    margin-inline: auto;
+    border-radius: 100%;
+    height: 130px;
+    width: 130px;
+}
+.apt-list{
+    list-style: none;
+}
+.apt-container{
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    padding: .5rem;
+    justify-content: space-between;
+}
+.space{
+    gap: .3rem;
+}
+button{
+    font-weight: 500;
+    background-color: var(--sark-gray-blue);
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+}
+button:hover{
+    background-color: var(--violet-blue);
+}
+
+.red-text{
+    color: var(--light-red);
+}
+.yellow-text{
+    color: var(--orange-yellow);
+}
+.green-text{
+    color: var(--green-teal);
+}
+.blue-text{
+    color: var(--cobalt-blue);
+}
+.bg-red{
+   background-color: hsla(0, 100%, 67%, .2);
+}
+.bg-yellow{
+   background-color: hsla(39, 100%, 56%, .2);
+}
+.bg-green{
+    background-color: hsla(166, 100%, 37%, .2);
+}
+.bg-blue{
+    background-color: hsla(234, 85%, 45%, .2);
+}
